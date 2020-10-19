@@ -1,9 +1,9 @@
 function Account (login,email){
     this.login = login;
-    this.email = email; 
+    this.email = email; }
       
-    this.getInfo = function (){
-    return `login : ${this.login}, email: ${this.email}`;}}
+    Account.prototype.getInfo = function (){
+    return `login : ${this.login}, email: ${this.email}`;}
   
   console.log(typeof Account.prototype.getInfo);
   // 'function'
